@@ -60,8 +60,7 @@ function Game1() {
 
   return (
     <div>
-      <div id="game1" width="600" height="400" display="none"></div>
-      {/* Game logic... */}
+      <div id="game1"></div>
     </div>
   )
 }
