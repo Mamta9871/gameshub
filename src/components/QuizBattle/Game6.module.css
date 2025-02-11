@@ -1,0 +1,69 @@
+.gameContainer {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameOverContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameOverContainer button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgreen;
+    transition: all 0.2s ease-in-out;
+}
+.gameOverContainer button:hover {
+    background-color: green;
+}
+
+.quizContainer {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(207, 228, 255, 0.5);
+}
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.optionBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: lightblue;
+}
+.optionBtn:disabled {
+  cursor: not-allowed;
+    opacity: 0.7;
+}
+.optionBtn:hover:not(:disabled) {
+    background-color: blue;
+    color: white;
+}
+.correct {
+    background-color: green;
+    color: white;
+}
+.incorrect {
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,42 @@
+.gameContainer {
+    text-align: center;
+    padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .petContainer {
+    margin: 20px 0;
+    cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .pet {
+    background-color: lightcoral; /*  a placeholder for your pet style*/
+    border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5em;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  .pet:active {
+      transform: scale(1.1);
+  }
+  
+  .upgradeBtn {
+      background-color: lightgreen;
+      border-radius: 5px;
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+  }
+  .upgradeBtn:hover {
+      background-color: green;
+  }

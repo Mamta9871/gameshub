@@ -1,0 +1,111 @@
+/* Overall container with a cosmic background */
+.gameContainer {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 50vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  /* Title styling with a glowing effect */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Score text styling */
+  .score {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Container for the challenge area */
+  .challengeContainer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Challenge text and code styling */
+  .challengeText {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .code {
+    font-weight: bold;
+    color: #ffd700;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  /* Input styling with focus effects */
+  .input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .input:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Typing speed text styling */
+  .typingSpeed {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Game over container with a dramatic overlay */
+  .gameOverContainer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Game over titles and texts */
+  .gameOverTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gameOverText {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Stylish restart button */
+  .button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+  }
+  

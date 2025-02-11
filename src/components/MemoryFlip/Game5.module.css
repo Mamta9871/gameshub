@@ -1,0 +1,195 @@
+.gameContainer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .scoreContainer {
+    display: flex;
+    justify-content: center;
+      gap: 30px;
+  }
+  
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    width: fit-content;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      transform-style: preserve-3d;
+  }
+  
+  .card.flipped {
+      transform: rotateY(180deg);
+  }
+  
+  .cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+      justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+      font-size: 3em;
+  }
+  .cardBack {
+      background-color: lightblue;
+  }
+  .cardFront {
+      background-color: lightcoral;
+      transform: rotateY(180deg);
+  }
+  .card.matched {
+      opacity: 0.5;
+      pointer-events: none;
+  }
+  
+  .gameEndContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .gameEndContainer button {
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: lightgreen;
+      transition: all 0.2s ease-in-out;
+  }
+  .gameEndContainer button:hover {
+      background-color: green;
+  }
+
+/* Success Modal */
+.successModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.successContent {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.successContent h2 {
+  color: green;
+  font-size: 2rem;
+}
+
+.successContent p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.successContent button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.successContent button:hover {
+  background-color: #45a049;
+}
+
+/* Flying Icons Animation */
+.flyIconsContainer {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flyIcon {
+  font-size: 3rem;
+  position: absolute;
+  animation: flyAnimation 5s ease-out infinite;
+}
+
+.flyIcon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.flyIcon:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.flyIcon:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.flyIcon:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.flyIcon:nth-child(5) {
+  animation-delay: 4s;
+}
+
+@keyframes flyAnimation {
+  0% {
+    transform: translate(0, 100px) rotate(0deg);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-200px, -100px) rotate(90deg);
+    opacity: 0.9;
+  }
+  40% {
+    transform: translate(300px, -150px) rotate(180deg);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translate(-100px, -200px) rotate(270deg);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translate(500px, -100px) rotate(360deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-300px, -400px) rotate(450deg);
+    opacity: 0;
+  }
+}

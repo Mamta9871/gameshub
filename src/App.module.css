@@ -1,0 +1,25 @@
+.nav {
+  /* Example styles */
+  background-color: #1e40af; /* Overridden by inline style bg-blue-600 */
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navHeader {
+  font-size: 1.25rem; /* Text size for Game Hub */
+  font-weight: bold;
+  color: white;
+}
+
+.navLink {
+  text-decoration: none; /* Example to override if needed */
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}

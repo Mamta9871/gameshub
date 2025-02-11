@@ -1,0 +1,98 @@
+.gameContainer {
+    text-align: center;
+    padding: 0px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .gameHeader {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+  }
+  .layerCounter, .scoreCounter {
+      display: flex;
+      font-size: 1.3em;
+      gap: 5px;
+      color: white;
+      align-items: flex-end;
+  }
+  .layerCounter span, .scoreCounter span {
+      font-size: 0.7em;
+      margin-bottom: 2px;
+      margin-left: 2px;
+  }
+  .scoreAndLives {
+      display: flex;
+      gap: 20px;
+  }
+  .livesCounter {
+    display: flex;
+      gap: 3px;
+  }
+  .heart {
+      height: 20px;
+  }
+  
+  .towerArea {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    margin: 20px auto;
+  }
+  .towerBase {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+  }
+  .crane {
+      position: absolute;
+      left: 40px;
+      width: 200px;
+      height: 150px;
+  }
+  .block {
+      position: absolute;
+      transition: all 0.2s ease;
+      height: 35px;
+  }
+  
+  .button {
+      background-color: lightgreen;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+      background-color: green;
+  }
+  
+  .gameOverContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .startButtonContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .buttonsContainer {
+      position: absolute;
+      bottom: 20px;
+  }
+  
+  .playButton {
+      width: 100px;
+      cursor: pointer;
+  }

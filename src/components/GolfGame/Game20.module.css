@@ -1,0 +1,59 @@
+.gameContainer {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .gameField {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #4caf50;
+    border-radius: 10px;
+    border: 2px solid #333;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .hole {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .powerControl,
+  .angleControl {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .shootButton,
+  .resetButton {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .shootButton:hover,
+  .resetButton:hover {
+    background-color: #005f73;
+  }
+  
