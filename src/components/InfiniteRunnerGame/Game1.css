@@ -2,12 +2,7 @@
 
 
 /* Game canvas */
-#game1 {
-  position: relative;
-  margin: 0 auto;
-  width: 500px;
-  height: 320px;
-}
+
 
 /* canvas{
   display: none;

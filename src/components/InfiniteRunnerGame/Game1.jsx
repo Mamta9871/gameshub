@@ -4,7 +4,6 @@ import disclaimer from "../InfiniteRunnerGame/scenes/disclaimer";
 import mainMenu from "../InfiniteRunnerGame/scenes/mainMenu";
 import game from "../InfiniteRunnerGame/scenes/game";
 import gameover from "../InfiniteRunnerGame/scenes/gameover";
-import './Game1.css';
 
 function Game1() {
   useEffect(() => {
