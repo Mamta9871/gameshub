@@ -7,8 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Ignore dependencies folder
 node_modules
+
+# Vite/React production build output
+dist
 dist-ssr
+
+# Local environment files
 *.local
 
 # Editor directories and files
