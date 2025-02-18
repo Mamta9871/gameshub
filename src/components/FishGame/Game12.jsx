@@ -1,4 +1,3 @@
-// src/components/MyJsGamePage.jsx
 import React from 'react';
 
 function Game12() {
@@ -6,10 +5,10 @@ function Game12() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/public/gone-fishing/index.html"  // This path points to your game folder in public
+        src="/src/components/gone-fishing/index.html"  
         style={{
           width: '100%',
-          height: '100vh', // Adjust as needed
+          height: '100vh', 
           border: 'none'
         }}
       />
