@@ -5,7 +5,7 @@ function Game19() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/src/components/spot-the-difference/spot.html"  
+        src="/public/games/spot-the-difference/spot.html"  
         style={{
           width: '100%',
           height: '100vh', 
