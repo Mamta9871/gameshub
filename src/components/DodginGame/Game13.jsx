@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Game17() {
+function Game13() {
   return (
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/src/components/DodgingGame/index.html"  
+        src="/src/components/DodgingGame/dodging.html"  
         style={{
           width: '100%',
           height: '100vh', 
@@ -16,4 +16,4 @@ function Game17() {
   );
 }
 
-export default Game17;
+export default Game13;

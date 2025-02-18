@@ -1,12 +1,12 @@
 // src/components/MyJsGamePage.jsx
 import React from 'react';
 
-function Game10() {
+function Game3() {
   return (
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/src/components/tower_game/index.html"  // This path points to your game folder in public
+        src="/src/components/tower_game/tower.html"  // This path points to your game folder in public
         style={{
           width: '100%',
           height: '100vh', // Adjust as needed
@@ -17,4 +17,4 @@ function Game10() {
   );
 }
 
-export default Game10;
+export default Game3;

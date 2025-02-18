@@ -5,7 +5,7 @@ function Game20() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/src/components/Mini-Golf-Game/index.html"  
+        src="/src/components/Mini-Golf-Game/golf.html"  
         style={{
           width: '100%',
           height: '100vh', 
