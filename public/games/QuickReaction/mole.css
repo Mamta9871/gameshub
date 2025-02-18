@@ -39,3 +39,27 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #d84315;
+    transform: scale(1.05);
+}

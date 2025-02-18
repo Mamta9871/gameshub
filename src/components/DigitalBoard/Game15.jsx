@@ -5,7 +5,7 @@ function Game15() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/public/games/DigitalBoardGame/Board.html"  
+        src="/games/DigitalBoardGame/Board.html"  
         style={{
           width: '100%',
           height: '100vh', 

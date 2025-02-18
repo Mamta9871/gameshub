@@ -5,7 +5,7 @@ function Game13() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/public/games/DodgingGame/dodging.html"  
+        src="/games/DodgingGame/dodging.html"  
         style={{
           width: '100%',
           height: '100vh', 

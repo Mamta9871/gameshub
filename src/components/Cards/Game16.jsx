@@ -5,7 +5,7 @@ function Game16() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/public/games/StackCards/stack.html"  
+        src="/games/StackCards/stack.html"  
         style={{
           width: '100%',
           height: '100vh', 

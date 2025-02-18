@@ -5,7 +5,7 @@ function Game17() {
     <div style={{ textAlign: 'center' }}>
       <iframe
         title="My JavaScript Game"
-        src="/public/games/bubble-shooter-game/bubble.html"  
+        src="/games/bubble-shooter-game/bubble.html"  
         style={{
           width: '100%',
           height: '100vh', 

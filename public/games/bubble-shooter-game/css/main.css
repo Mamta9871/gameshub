@@ -15,7 +15,7 @@ body {
 }
 
 #board {
-    background-image: url(../resources/images/game-background-mountains-green.png);
+    background-image: url("../resources/images/game-background-mountains-green.png");
     background-size: cover;
     width: 60vh;
     height: 90vh;
@@ -26,7 +26,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border: 4.8vh solid transparent;
-    border-image: url(../resources/images/border-image.png) 100 stretch;   
+    border-image: url("../resources/images/border-image.png") 100 stretch;   
 }
 
 #sign-board {
@@ -41,7 +41,7 @@ body {
     line-height: 3vh;
     text-shadow: 0px 2px 0px rgba(255,255,255,.7), 0px -2px 0px rgba(0,0,0,.7);
     padding-top: 3vh;
-    background-image: url(../resources/images/sign-board.png);
+    background-image: url("../resources/images/sign-board.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -64,7 +64,7 @@ body {
     font-size:5.5vh;
     text-shadow: 0px 2px 0px rgba(255,255,255,.7), 0px -2px 0px rgba(0,0,0,.7);
     padding-top: 10vh;
-    background-image: url(../resources/images/message-box-background.png);
+    background-image: url("../resources/images/message-box-background.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -92,15 +92,15 @@ body {
 }
 
 .restart-button {
-    background-image: url(../resources/images/restart-button-background.png);   
+    background-image: url("../resources/images/restart-button-background.png");   
 }
 
 .play-button {
-       background-image: url(../resources/images/play-button-background.png);  
+       background-image: url("../resources/images/play-button-background.png");  
 }
 
 .next-button {
-   background-image: url(../resources/images/next-button-background.png);
+   background-image: url("../resources/images/next-button-background.png");
 }
 
 .music-button {
@@ -118,12 +118,12 @@ body {
 
 #sound-on-button {
     right: 2vh;
-    background-image: url(../resources/images/sound-on-button.png);    
+    background-image: url("../resources/images/sound-on-button.png");    
 }
 
 #sound-off-button {
     right: 7vh;   
-    background-image: url(../resources/images/sound-off-button.png);    
+    background-image: url("../resources/images/sound-off-button.png");    
 }
 
 .bubble {
@@ -135,17 +135,17 @@ body {
 }
 
 .bubble-pink {
-    background-image: url(../resources/images/furry-balls-pink.png);
+    background-image: url("../resources/images/furry-balls-pink.png");
 }
 
 .bubble-green{
-    background-image: url(../resources/images/furry-balls-green.png);
+    background-image: url("../resources/images/furry-balls-green.png");
 }
 
 .bubble-yellow{
-    background-image: url(../resources/images/furry-balls-yellow.png);
+    background-image: url("../resources/images/furry-balls-yellow.png");
 }
 
 .bubble-blue{
-    background-image: url(../resources/images/furry-balls-blue.png);
+    background-image: url("../resources/images/furry-balls-blue.png");
 }

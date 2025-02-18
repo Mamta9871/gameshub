@@ -8,7 +8,7 @@ server.use('/assets', express.static(path.resolve(__dirname, './assets')))
 server.use('/dist', express.static(path.resolve(__dirname, './dist')))
 
 server.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './index.html'));
+  res.sendFile(path.resolve(__dirname, './tower.html'));
 })
 
 server.listen(8082, () => {
