@@ -425,10 +425,10 @@ function draw() {
         const buttonY = height / 1.4;
 
         if (
-            mouseX > buttonX - buttonWidth / 2
-            && mouseX < buttonX + buttonWidth / 2
-            && mouseY > buttonY - buttonHeight / 2
-            && mouseY < buttonY + buttonHeight / 2
+            mouseX > buttonX - buttonWidth / 2 &&
+            mouseX < buttonX + buttonWidth / 2 &&
+            mouseY > buttonY - buttonHeight / 2 &&
+            mouseY < buttonY + buttonHeight / 2
         ) {
             fill(150);
             cursor("pointer");
@@ -446,11 +446,11 @@ function draw() {
         pop();
 
         if (
-            mouseIsPressed
-            && mouseX > buttonX - buttonWidth / 2
-            && mouseX < buttonX + buttonWidth / 2
-            && mouseY > buttonY - buttonHeight / 2
-            && mouseY < buttonY + buttonHeight / 2
+            mouseIsPressed &&
+            mouseX > buttonX - buttonWidth / 2 &&
+            mouseX < buttonX + buttonWidth / 2 &&
+            mouseY > buttonY - buttonHeight / 2 &&
+            mouseY < buttonY + buttonHeight / 2
         ) {
             cursor(ARROW);
             win = false;
