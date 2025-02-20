@@ -9,9 +9,9 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <Link to="/" className={styles.gameBtn}>Game Hub</Link>
       
-      <button onClick={() => navigate(-1)} className={styles.back}>
+      <Link to="/" className={styles.backBtn}>
         Back
-      </button>
+      </Link>
 
       <NavLink to="/leaderboard" className={styles.leaderBtn}>Leaderboard</NavLink>
     </nav>

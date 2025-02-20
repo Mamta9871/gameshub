@@ -31,18 +31,20 @@ const Game18 = () => {
   const [win,setWin] = useState(false);
   const winAudioRef = useRef(null);
 
+  const leftOffset = 200;
+
 
   const origPositions = useRef([
-    { x: 200, y: 100 },
-    { x: 304, y: 100 },
-    { x: 466, y: 100 },
-    { x: 200, y: 233 },
-    { x: 333, y: 204 },
-    { x: 437, y: 233 },
-    { x: 200, y: 337 },
-    { x: 304, y: 366 },
-    { x: 466, y: 337 },
-  ]).current;
+    { x: 200 + leftOffset, y: 100 },
+    { x: 304 + leftOffset, y: 100 },
+    { x: 466 + leftOffset, y: 100 },
+    { x: 200 + leftOffset, y: 233 },
+    { x: 333 + leftOffset, y: 204 },
+    { x: 437 + leftOffset, y: 233 },
+    { x: 200 + leftOffset, y: 337 },
+    { x: 304 + leftOffset, y: 366 },
+    { x: 466 + leftOffset, y: 337 },
+]).current;
 
   useEffect(() => {
     // initial random position
@@ -124,19 +126,21 @@ const Game18 = () => {
   }
 
   return (
-    <><div className='guess'>
-        <h1 className='drawing'>Guess The Drawing</h1>
+    <>
+    <div className='guess' style={{ position: 'relative', width: '800px' }}>
+        <h2 className='drawing' style={{textAlign: 'center', marginRight: '-80%', marginTop: '1%'}}>Puzzle Game</h2>
        <audio id="win" src={media_win} ref={winAudioRef}/>
-      <svg width="600" height="600" id="entorno" className={styles.entorno}
+      <svg width="300" height="600" id="entorno" className={styles.entorno}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
+        style={{overflow: 'visible'}}
       >
         <g id="fondo" className={styles.fondo}>
             <image 
                 xlinkHref="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master//pikachu.png" 
                 width="400" 
                 height="400" 
-                x="200" 
+                x={200 + leftOffset}
                 y="100" 
             />
         </g>
