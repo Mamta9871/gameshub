@@ -4,6 +4,7 @@ import disclaimer from "../InfiniteRunnerGame/scenes/disclaimer";
 import mainMenu from "../InfiniteRunnerGame/scenes/mainMenu";
 import game from "../InfiniteRunnerGame/scenes/game";
 import gameover from "../InfiniteRunnerGame/scenes/gameover";
+import Navbar from "./Navbar";
 
 function Game1() {
   useEffect(() => {
@@ -60,6 +61,7 @@ function Game1() {
 
   return (
     <div>
+      <Navbar/>
       <div id="game1"></div>
     </div>
   )

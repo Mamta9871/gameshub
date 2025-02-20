@@ -1,0 +1,40 @@
+.game-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game1 {
+    position: absolute;
+    top: 60px; /* Push the game below the navbar */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px); /* Keep game size below navbar */
+    z-index: 1;
+}
+
+.nav-overlay {
+    position: fixed; /* Ensures it always stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1e40af;
+    z-index: 9999; /* Forces navbar to always be above game */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    color: white;
+}
+
+.gameBtn, .backBtn, .leaderBtn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}

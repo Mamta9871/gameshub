@@ -1,15 +1,20 @@
 .nav {
-  /* Example styles */
-  background-color: #1e40af; /* Overridden by inline style bg-blue-600 */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #1e40af; /* Keeping your existing color */
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000; /* Ensures navbar stays above content */
+  opacity: 0.9;
 }
 
-.navHeader {
+
+.gameBtn {
   font-size: 1.25rem; /* Text size for Game Hub */
-  font-weight: bold;
+  font-weight: normal;
   color: white;
 }
 
@@ -20,6 +25,17 @@
   font-weight: bold;
 }
 
-.navLink:hover {
-  text-decoration: underline;
+
+.back{
+  color: white;
+  font-size: 1.25rem; 
+  font-weight: normal;
+  margin-left: -10%;
+}
+
+.leaderBtn{
+  font-size: 1.25rem; /* Text size for Game Hub */
+  font-weight: normal;
+  color: white;
+  margin-left: -15ex;
 }

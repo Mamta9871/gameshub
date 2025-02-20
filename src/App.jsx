@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, NavLink, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import HomePage from './components/HomePage.jsx';
 import Leaderboard from './components/Leaderboard.jsx';
 import Game1 from './components/InfiniteRunnerGame/Game1.jsx';
@@ -34,17 +34,28 @@ const App = () => {
 
 const MainApp = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Hide "Back" button on the homepage ("/")
+  const showBackButton = location.pathname !== "/";
 
   // Check if the current route is `/game1`
   const isGame1Active = location.pathname === "/game1";
-  
 
   return (
     <div>
       <nav className={styles.nav}>
-        <Link to="/" className={styles.navHeader}>Game Hub</Link>
+        <Link to="/" className={styles.gameBtn}>Game Hub</Link>
+
+        {/* Back Button: Only visible when not on the homepage */}
+        {showBackButton && (
+          <Link onClick={() => navigate(-1)} className={styles.back}>
+            Back
+          </Link>
+        )}
+
         <div className="flex space-x-4">
-          <NavLink to="/leaderboard" className={styles.navLink}>Leaderboard</NavLink>
+          <NavLink to="/leaderboard" className={styles.leaderBtn}>Leaderboard</NavLink>
         </div>
       </nav>
       
@@ -76,8 +87,7 @@ const MainApp = () => {
       {/* Hide canvas when not on Game1 */}
       <style>
         {`
-          Canvas
-           {
+          Canvas {
             display: ${isGame1Active ? "block" : "none"} !important;
           }
         `}

@@ -11,9 +11,10 @@
 
 .leaderboard-title {
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: normal;
   color: #333333;
+  margin: 0 auto;
+  margin-left: -20px;
 }
 
 .leaderboard-table {

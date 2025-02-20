@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Game5.module.css';
+import cheer from "./cheer.mp3";
+import right_med from './right_med.mp3';
+import welcome from './welcome.mp3';
+// import wrong from './wrong.mp3';
 
 const emojis = ['😀', '😂', '😍', '😎', '🤯', '😴', '😈', '👽'];
 
@@ -46,15 +50,17 @@ const Game5 = () => {
   const playSound = (soundType) => {
     let audio;
     if (soundType === 'cardFlip') {
-      audio = new Audio('src/components/MemoryFlip/welcome.mp3');
+      audio = new Audio(welcome);
     } else if (soundType === 'matchFound') {
-      audio = new Audio('src/components/MemoryFlip/right_med.mp3');
+      audio = new Audio(right_med);
     } else if (soundType === 'gameComplete') {
-      audio = new Audio('src/components/MemoryFlip/cheer.mp3');
+      audio = new Audio(cheer);
     }
 
     if (audio) {
-      audio.play();
+      audio.play().catch(()=>{
+        
+      });
     }
   };
 
