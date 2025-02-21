@@ -16,12 +16,12 @@ const difficultySelect = document.getElementById("difficulty-select");
 
 // Preload function to load images and sounds before setup
 function preload() {
-    foodImage = loadImage("./images/food.png");
-    ratImage = loadImage("./images/rat.png");
+    foodImage = loadImage("images/food.png");
+    ratImage = loadImage("images/rat.png");
 
-    moveSound = loadSound("./audio/moves.wav");
-    difficultySound = loadSound("./audio/difficulty.wav");
-    winSound = loadSound("./audio/win.mp3");
+    moveSound = loadSound("audio/moves.wav");
+    difficultySound = loadSound("audio/difficulty.wav");
+    winSound = loadSound("audio/win.mp3");
 }
 
 function drawSimpleRatFace(x, y, w, h) {
@@ -276,8 +276,8 @@ function showHint() {
 }
 
 hintBtn.addEventListener("click", () => {
-    difficultySound ? .setVolume(0.5);
-    difficultySound ? .play();
+    difficultySound?.setVolume(0.5);
+    difficultySound?.play();
     if (hintBtn.innerText === "Hint") {
         hintBtn.innerText = "Hide";
         showHint();
@@ -313,8 +313,8 @@ function solve() {
                             showHint();
                         }
                         if (index === path.length - 1) {
-                            winSound ? .setVolume(0.5);
-                            winSound ? .play();
+                            winSound?.setVolume(0.5);
+                            winSound?.play();
                             setTimeout(() => {
                                 win = true;
                                 totalMoves = path.length - 1;
@@ -338,8 +338,8 @@ function stopAutoSolve() {
 }
 
 solveBtn.addEventListener("click", () => {
-    difficultySound ? .setVolume(0.5);
-    difficultySound ? .play();
+    difficultySound?.setVolume(0.5);
+    difficultySound?.play();
     if (solveBtn.innerText === "Solve") {
         autoSolved = true;
         solve();
@@ -364,8 +364,8 @@ function setup() {
     stopAutoSolve();
     rowsCount = difficultySelect.value;
     colsCount = difficultySelect.value;
-    difficultySound ? .setVolume(0.5);
-    difficultySound ? .play();
+    difficultySound?.setVolume(0.5);
+    difficultySound?.play();
 
     canvasWidth = canvasElement.clientWidth;
     canvasHeight = canvasElement.clientHeight;
@@ -454,7 +454,7 @@ function draw() {
         ) {
             cursor(ARROW);
             win = false;
-            winSound ? .stop();
+            winSound?.stop();
             setup();
         }
     } else {
@@ -471,8 +471,8 @@ function draw() {
 
 difficultySelect.addEventListener("change", () => {
     setup();
-    difficultySound ? .setVolume(0.5);
-    difficultySound ? .play();
+    difficultySound?.setVolume(0.5);
+    difficultySound?.play();
     difficultySelect.blur();
 });
 
@@ -480,10 +480,10 @@ function movePlayer(di, dj) {
     player.visited = false;
     player = grid[player.i + di][player.j + dj];
     player.visited = true;
-    moveSound ? .stop();
+    moveSound?.stop();
     totalMoves++;
-    moveSound ? .setVolume(0.5);
-    moveSound ? .play();
+    moveSound?.setVolume(0.5);
+    moveSound?.play();
 
     if (hintBtn.innerText === "Hide") {
         resetIsExistInPath();
@@ -491,8 +491,8 @@ function movePlayer(di, dj) {
     }
 
     if (player === destination) {
-        winSound ? .setVolume(0.5);
-        winSound ? .play();
+        winSound?.setVolume(0.5);
+        winSound?.play();
         setTimeout(() => {
             win = true;
         }, 700);

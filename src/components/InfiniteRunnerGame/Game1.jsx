@@ -61,7 +61,6 @@ function Game1() {
 
   return (
     <div>
-      <Navbar/>
       <div id="game1"></div>
     </div>
   )
