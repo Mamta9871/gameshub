@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom'; // Import Route and Routes
+import { Link, Route, Routes } from 'react-router-dom'; 
 import styles from './HomePage.module.css';
-import Game1 from '../components/InfiniteRunnerGame/Game1' //added the Game1
+import Game1 from '../components/InfiniteRunnerGame/Game1' 
 
 const games = [
   { id: 'game1', name: 'Infinite Runner', thumbnail: 'game1.jpg', component: Game1 },

@@ -52,10 +52,11 @@ function Game1() {
 
     k.go("disclaimer");
 
+    // Clean up Kaplay when the component unmounts
     return () => {
-      // Clean up Kaplay when the component unmounts
-      k.destroy();
-
+      if (k && typeof k.destroy === "function") {
+        k.destroy();
+      }
     };
   }, []);
 
@@ -63,7 +64,7 @@ function Game1() {
     <div>
       <div id="game1"></div>
     </div>
-  )
+  );
 }
 
 export default Game1;
