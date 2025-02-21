@@ -16,12 +16,12 @@ const difficultySelect = document.getElementById("difficulty-select");
 
 // Preload function to load images and sounds before setup
 function preload() {
-    foodImage = loadImage("images/food.png");
-    ratImage = loadImage("images/rat.png");
+    foodImage = loadImage("maze-escape/images/food.png");
+    ratImage = loadImage("maze-escape/images/rat.png");
 
-    moveSound = loadSound("audio/moves.wav");
-    difficultySound = loadSound("audio/difficulty.wav");
-    winSound = loadSound("audio/win.mp3");
+    moveSound = loadSound("maze-escape/audio/moves.wav");
+    difficultySound = loadSound("maze-escape/audio/difficulty.wav");
+    winSound = loadSound("maze-escape/audio/win.mp3");
 }
 
 function drawSimpleRatFace(x, y, w, h) {

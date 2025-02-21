@@ -49,9 +49,15 @@ const MainApp = () => {
 
         {/* Back Button: Only visible when not on the homepage */}
         {showBackButton && (
-          <Link onClick={() => navigate(-1)} className={styles.back}>
-            Back
-          </Link>
+          location.pathname === "/game1" ? (
+            <Link onClick={() => navigate("/")} className={styles.back}>
+              Back
+            </Link>
+          ) : (
+            <Link onClick={() => navigate(-1)} className={styles.back}>
+              Back
+            </Link>
+          )
         )}
 
         <div className="flex space-x-4">
