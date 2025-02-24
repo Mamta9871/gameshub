@@ -16,12 +16,12 @@ const difficultySelect = document.getElementById("difficulty-select");
 
 // Preload function to load images and sounds before setup
 function preload() {
-    foodImage = loadImage("./food.png");
-    ratImage = loadImage("./rat.png");
+    foodImage = loadImage("images/food.png");
+    ratImage = loadImage("images/rat.png");
 
-    moveSound = loadSound("./moves.wav");
-    difficultySound = loadSound("./difficulty.wav");
-    winSound = loadSound("./win.mp3");
+    moveSound = loadSound("audio/moves.wav");
+    difficultySound = loadSound("audio/difficulty.wav");
+    winSound = loadSound("audio/win.mp3");
 }
 
 function drawSimpleRatFace(x, y, w, h) {
@@ -425,10 +425,10 @@ function draw() {
         const buttonY = height / 1.4;
 
         if (
-            mouseX > buttonX - buttonWidth / 2 &&
-            mouseX < buttonX + buttonWidth / 2 &&
-            mouseY > buttonY - buttonHeight / 2 &&
-            mouseY < buttonY + buttonHeight / 2
+            mouseX > buttonX - buttonWidth / 2
+            && mouseX < buttonX + buttonWidth / 2
+            && mouseY > buttonY - buttonHeight / 2
+            && mouseY < buttonY + buttonHeight / 2
         ) {
             fill(150);
             cursor("pointer");
@@ -446,11 +446,11 @@ function draw() {
         pop();
 
         if (
-            mouseIsPressed &&
-            mouseX > buttonX - buttonWidth / 2 &&
-            mouseX < buttonX + buttonWidth / 2 &&
-            mouseY > buttonY - buttonHeight / 2 &&
-            mouseY < buttonY + buttonHeight / 2
+            mouseIsPressed
+            && mouseX > buttonX - buttonWidth / 2
+            && mouseX < buttonX + buttonWidth / 2
+            && mouseY > buttonY - buttonHeight / 2
+            && mouseY < buttonY + buttonHeight / 2
         ) {
             cursor(ARROW);
             win = false;
@@ -523,6 +523,7 @@ function moveRight() {
     }
 }
 
+// Function to handle key presses for player movement
 function keyPressed() {
     if (keyCode === UP_ARROW) {
         moveUp();
