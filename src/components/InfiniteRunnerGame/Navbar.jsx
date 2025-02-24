@@ -5,9 +5,13 @@ import styles from "./Navbar.module.css"; // Ensure this file exists
 const Navbar = () => {
   const navigate = useNavigate();
 
+  const handleBack = () => {
+    window.location.href = "/"; // Full page reload to properly reset the game state
+  };
+
   return (
     <nav className={styles.nav}>
-      <button onClick={() => navigate("/")} className={styles.backBtn}>
+      <button onClick={handleBack} className={styles.backBtn}>
         Back
       </button>
       <a href="/" className={styles.gameBtn}>Game Hub</a>

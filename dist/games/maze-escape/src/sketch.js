@@ -523,7 +523,6 @@ function moveRight() {
     }
 }
 
-// Function to handle key presses for player movement
 function keyPressed() {
     if (keyCode === UP_ARROW) {
         moveUp();
