@@ -16,12 +16,12 @@ const difficultySelect = document.getElementById("difficulty-select");
 
 // Preload function to load images and sounds before setup
 function preload() {
-    foodImage = loadImage("./img/food.png");
-    ratImage = loadImage("./img/rat.png");
+    foodImage = loadImage("./food.png");
+    ratImage = loadImage("./rat.png");
 
-    moveSound = loadSound("./audio/moves.wav");
-    difficultySound = loadSound("./audio/difficulty.wav");
-    winSound = loadSound("./audio/win.mp3");
+    moveSound = loadSound("./moves.wav");
+    difficultySound = loadSound("./difficulty.wav");
+    winSound = loadSound("./win.mp3");
 }
 
 function drawSimpleRatFace(x, y, w, h) {
