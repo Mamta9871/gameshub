@@ -15,20 +15,14 @@ let winSound;
 const difficultySelect = document.getElementById("difficulty-select");
 
 // Preload function to load images and sounds before setup
-// Preload function to load images and sounds before setup
 function preload() {
-    try {
-        foodImage = loadImage("/images/food.png");
-        ratImage = loadImage("/images/rat.png");
+    foodImage = loadImage("images/food.png");
+    ratImage = loadImage("images/rat.png");
 
-        moveSound = loadSound("/audio/moves.wav");
-        difficultySound = loadSound("/audio/difficulty.wav");
-        winSound = loadSound("/audio/win.mp3");
-    } catch (error) {
-        console.error('Error loading resources:', error);
-    }
+    moveSound = loadSound("audio/moves.wav");
+    difficultySound = loadSound("audio/difficulty.wav");
+    winSound = loadSound("audio/win.mp3");
 }
-
 
 function drawSimpleRatFace(x, y, w, h) {
     push();
