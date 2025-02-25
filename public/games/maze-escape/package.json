@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --fix --ext .js src/",
     "format": "prettier --write \"src/**/*.js\"",
-    "start": "live-server --port=3000",
+    "start": "http-server -c-1 -p 8081",
     "postinstall": "npx husky install"
   },
   "keywords": [
@@ -16,7 +16,6 @@
     "css",
     "javascript"
   ],
-  "author": "Ankit Matth",
   "license": "ISC",
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.3",
