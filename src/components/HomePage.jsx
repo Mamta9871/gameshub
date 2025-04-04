@@ -24,6 +24,7 @@ const games = [
   { id: 'game18', name: 'Guess the Drawing', thumbnail: 'game18.jpg', component: () => <div>Guess the Drawing Placeholder</div> },
   { id: 'game19', name: 'Spot the Difference', thumbnail: 'game19.jpg', component: () => <div>Spot the Difference Placeholder</div> },
   { id: 'game20', name: 'Mini Golf Challenge', thumbnail: 'game20.jpg', component: () => <div>Mini Golf Challenge Placeholder</div> },
+  { id: 'game21', name: 'Hill Climb Racing', thumbnail: 'game21.jpg', component: () => <div>Hill Climb Racing Game</div> },
 ];
 
 const HomePage = () => {

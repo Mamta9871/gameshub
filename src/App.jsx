@@ -23,6 +23,7 @@ import Game18 from './components/GuessDrawing/Game18.jsx';
 import Game20 from './components/GolfGame/Game20.jsx';
 import Game19 from './components/SpotsDifference/Game19.jsx';
 import styles from './App.module.css';
+import Game21 from './components/HillRacingClimb/Game21.jsx';
 
 const App = () => {
   return (
@@ -88,6 +89,7 @@ const MainApp = () => {
         <Route path="/game18" element={<Game18 />} />
         <Route path="/game19" element={<Game19 />} />
         <Route path="/game20" element={<Game20 />} />
+        <Route path="/game21" element={<Game21/>} />
       </Routes>
 
       {/* Hide canvas when not on Game1 */}
